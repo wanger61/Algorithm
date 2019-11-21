@@ -13,7 +13,8 @@ public class 圆圈中最后剩下的数字 {
         list.add(4);
         list.add(5);
         int m = 3;
-        int res = theLastNum(list,m);
+        //int res = theLastNum(list,m);
+        int res = theLastNum2(list,m);
         System.out.println(res);
     }
 
@@ -28,5 +29,8 @@ public class 圆圈中最后剩下的数字 {
             if (!iterator.hasNext()) iterator = list.iterator();
         }
         return list.get(0);
+    }
+
+    private static int theLastNum2(LinkedList<Integer> list, int m) {
     }
 }
