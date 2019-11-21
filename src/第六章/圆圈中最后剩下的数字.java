@@ -32,5 +32,10 @@ public class 圆圈中最后剩下的数字 {
     }
 
     private static int theLastNum2(LinkedList<Integer> list, int m) {
+        int last = 0;
+        for (int i=2; i<=list.size(); i++){
+            last = (last+m)%i;
+        }
+        return last;
     }
 }
